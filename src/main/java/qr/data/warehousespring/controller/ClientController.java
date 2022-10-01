@@ -1,6 +1,6 @@
 package qr.data.warehousespring.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import qr.data.warehousespring.additional.Result;
 import qr.data.warehousespring.entity.Client;
@@ -10,8 +10,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/client")
+@RequiredArgsConstructor
 public class ClientController {
-    @Autowired
+
     ClientService clientService;
     @GetMapping
     public List<Client> getAll(){

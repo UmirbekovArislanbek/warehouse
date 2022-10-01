@@ -1,19 +1,19 @@
 package qr.data.warehousespring.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import qr.data.warehousespring.additional.Result;
 import qr.data.warehousespring.entity.Warehouse;
-import qr.data.warehousespring.repasitory.WarehouseRepasitory;
 import qr.data.warehousespring.service.WarehouseService;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/warehouse")
+@RequiredArgsConstructor
 public class WarehouseController {
 
-    @Autowired
+
     WarehouseService warehouseService;
 
     @GetMapping

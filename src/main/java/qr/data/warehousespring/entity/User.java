@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -33,7 +34,7 @@ public class User {
     private Boolean status;
 
     @ManyToMany
-    private List<Warehouse> warehouses;
+    private Set<Warehouse> warehouses;
 
 }
 

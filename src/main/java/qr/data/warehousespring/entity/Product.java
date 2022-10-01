@@ -6,10 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import qr.data.warehousespring.entity.parent.Parent;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Data
@@ -22,8 +19,8 @@ public class Product extends Parent {
     @ManyToOne
     private Category category;
 
-    @OneToMany
-    private List<Attechment> photo;
+    @OneToOne
+    private Attechment photoId;
 
 
     @Column(nullable = false, unique = true)

@@ -7,9 +7,17 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryDto {
-    private String name;
-    private Boolean status;
-    private Integer parentCategoryid;
+public class ProductDto {
 
+    private String name;
+
+    private Integer categoryId;
+
+    private Integer photoId;
+
+    private String code;
+
+    private Integer measurementId;
+
+    private boolean active;
 }

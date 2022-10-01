@@ -1,6 +1,6 @@
 package qr.data.warehousespring.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import qr.data.warehousespring.additional.Result;
 import qr.data.warehousespring.dto.CategoryDto;
@@ -10,9 +10,9 @@ import qr.data.warehousespring.service.CaregoryServise;
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/category")
 public class CategoryController {
-    @Autowired
     CaregoryServise caregoryServise;
 
     @GetMapping

@@ -7,9 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryDto {
-    private String name;
-    private Boolean status;
-    private Integer parentCategoryid;
+public class OutputProductDto {
+
+    private Integer productId;
+    private Double amount;
+    private Double price;
+    private Integer OutputId;
 
 }
